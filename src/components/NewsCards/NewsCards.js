@@ -14,9 +14,7 @@ export default function NewsCards({ articles }) {
                         <NewsCard article={article} i={i} />
                     </Grid>
                 ))}
-
             </Grid>
-
         </Grow>
     )
 }
