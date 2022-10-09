@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import { BrowserRouter as Router, Route, Link } 
+       from "react-router-dom";
 import "./home.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -29,20 +31,10 @@ export default function Home() {
               "How are you?" .
             </h3>
 
-            <h2>Just Some basic instructions before we begin</h2>
+            <Link to={'/news'}><button className="start">Get Started</button></Link>
           </div>
         </Fade>
         <br></br>
-        <div className="instructions" >
-          <h2>Say the following</h2>
-          <ul  className="list" data-aos="fade-up"   data-aos-easing="ease-in-out">
-            <li>"Go Back" To go back to the previous page</li>
-            <li>
-              Open Article number "any no. of your choice" to open the Desired
-              article
-            </li>
-          </ul>
-        </div>
       </div>
     </>
   );

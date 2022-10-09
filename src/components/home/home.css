@@ -42,3 +42,16 @@ padding: .8rem;
     padding: 1rem;
     font-size: 2.25rem;
  }
+ .start{
+    margin-left:40rem;
+    height:5rem;
+    width:15rem;
+    font-size:2rem;
+    background-color: #071B2F;
+    border-radius: 6%;
+    color:#B6E4C8;
+ }
+ .start:hover{
+    box-shadow: 3px 4px 3px 4px silver;
+    transform: scale(1.1) !important;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import alanBtn from '@alan-ai/alan-sdk-web';
 import NewsCards from './components/NewsCards/NewsCards';
 import './App.css'
@@ -52,14 +53,12 @@ const[activeAricle,setActiveArticle] = useState(-1);
 
 
   return (
-    <>
-      {/* <div className='classes.logoContainer'>
-        <img src='https://voicebot.ai/wp-content/uploads/2019/10/alan.jpg' alt="" className={classes.alanLogo}/>
-      </div> */}
-
-      <Home/>
-      <NewsCards articles={newsArticles} activeArticle={activeAricle} data-aso="fade[up" />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Home/>} />
+      <Route path="/news" element={<NewsCards articles={newsArticles} activeArticle={activeAricle} data-aso="fade[up" />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
