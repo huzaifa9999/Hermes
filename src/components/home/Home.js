@@ -12,12 +12,12 @@ export default function Home() {
 
   return (
     <>
-      <div>
+      <div className="container">
         <Fade left big cascade>
           <div className="heading1">
-            <h1>Hii there!</h1>
-            <h2> Welcome to our voice command news App.</h2>
-            <h3> You can search news by seeing the info on cards below .</h3>
+            <h1>App Name</h1>
+            <h2> Welcome to our Voice Command News App.</h2>
+            <h3> With progress in Artificial Intelligence, the ways of reading news is also evolving. So here we present you a innovative to read the news where you only have to speak and hear.</h3>
           </div>
         </Fade>
         <br></br>

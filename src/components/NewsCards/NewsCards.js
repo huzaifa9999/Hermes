@@ -2,6 +2,8 @@ import React from 'react'
 import NewsCard from '../NewsCard/NewsCard'
 import { Grid, Grow, Typography } from '@material-ui/core'
 import useStyles from './Styles'
+import { BrowserRouter as Router, Route, Link } 
+       from "react-router-dom";
 
 
 export default function NewsCards({ articles, activeArticle }) {
@@ -19,6 +21,7 @@ export default function NewsCards({ articles, activeArticle }) {
         return (
             <>
                 <div className="instructions" >
+                <Link to={'/'} style={{textDecoration:'none'}}><h1>App Name</h1></Link>
                     <h2>Say the following</h2>
                     <ul className="list" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <li>Try saying "Go Back" To go back to the previous page</li>
@@ -47,6 +50,7 @@ export default function NewsCards({ articles, activeArticle }) {
 
     return (
         <><div className="instructions" >
+             <Link to={'/'} style={{textDecoration:'none'}}><h1>App Name</h1></Link>
             <h2>Say the following</h2>
             <ul className="list" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <li>"Go Back" To go back to the previous page</li>
