@@ -1,0 +1,44 @@
+.heading1 h2 {
+font-size: 2.5rem;
+text-align: start;
+padding: 1rem;
+margin: 2rem;
+
+}
+.heading1 h3 {
+    font-size: 2.25rem;
+    text-align: end;
+    padding: 1rem;
+    margin: 2rem;
+    
+    }
+.heading2 h3 {
+    font-size: 2.25rem;
+    text-align: start;
+    padding: 1rem;
+    margin: 2rem;
+    
+    }
+
+.heading2 h2{
+font-size: 2.5rem;
+text-align: end;
+padding: 1rem;
+margin: 1rem;
+}
+ .instructions li{
+font-size: 1.4rem;
+font-weight: 400;
+text-align: center;
+padding: .8rem;
+/* margin: 1rem; */
+ }
+ ul{
+    list-style: none;
+ }
+
+ .instructions h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.25rem;
+ }
