@@ -21,7 +21,7 @@ export default function NewsCards({ articles, activeArticle }) {
         return (
             <>
                 <div className="instructions" >
-                <Link to={'/'} style={{textDecoration:'none'}}><h1>App Name</h1></Link>
+                <Link to={'/'} style={{textDecoration:'none'}}><h1>HERMES</h1></Link>
                     <h2>Say the following</h2>
                     <ul className="list" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <li>Try saying "Go Back" To go back to the previous page</li>
@@ -50,7 +50,7 @@ export default function NewsCards({ articles, activeArticle }) {
 
     return (
         <><div className="instructions" >
-             <Link to={'/'} style={{textDecoration:'none'}}><h1>App Name</h1></Link>
+             <Link to={'/'} style={{textDecoration:'none'}}><h1>HERMES</h1></Link>
             <h2>Say the following</h2>
             <ul className="list" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <li>"Go Back" To go back to the previous page</li>

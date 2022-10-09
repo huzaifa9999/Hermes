@@ -15,24 +15,16 @@ export default function Home() {
       <div className="container">
         <Fade left big cascade>
           <div className="heading1">
-            <h1>App Name</h1>
-            <h2> Welcome to our Voice Command News App.</h2>
-            <h3> With progress in Artificial Intelligence, the ways of reading news is also evolving. So here we present you a innovative to read the news where you only have to speak and hear.</h3>
-          </div>
-        </Fade>
-        <br></br>
-        <br></br>
-
-        <Fade right big cascade>
-          <div className="heading2">
-            <h3>
-              {" "}
-              You can also ask general questions form AI<br></br> For example
+            <h1>HERMES</h1>
+            <h2> Welcome to Hermes, a News App as agile and fast as the Greek Messenger of Gods.</h2>
+            <h3> With progress in Artificial Intelligence, the ways of reading news is also evolving. So here we present you an innovation to read the news where you only have to speak and hear.</h3>
+          <h3>
+              You can also ask general questions from AI<br></br> For example
               "How are you?" .
             </h3>
 
             <Link to={'/news'}><button className="start">Get Started</button></Link>
-          </div>
+            </div>
         </Fade>
         <br></br>
       </div>
