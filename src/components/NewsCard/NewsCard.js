@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useState,useEffect,createRef }from 'react'
 import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core'
 import useStyles from './styles'
-
-const NewsCard = ({ article: { description, publishedAt, source, title, url, urlToImage }, i }) => {
+import classNames from 'classnames'
+const NewsCard = ({ article: { description, publishedAt, source, title, url, urlToImage }, i,activeArticle }) => {
 
     const classes = useStyles();
-
+    const [eleref,seteleref]= useState([]);
+    const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50);
+    useEffect(() => {
+      seteleref((refs) => Array(20).fill().map((_, j) => refs[j] || createRef()) );
+    }, [])
+    
+useEffect(() =>{
+if(i===activeArticle && eleref[activeArticle]){
+    scrollToRef(eleref[activeArticle]);
+}
+},[i,activeArticle,eleref])
     return (
-        <Card className={classes.card}>
+        <Card  ref={eleref[i]} className={classNames(classes.card, activeArticle===i? classes.activeCard : null)}> 
             <CardActionArea href={url} target='_blank'>
                 <CardMedia className={classes.image} image={urlToImage || 'https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg'} />
                 <div className={classes.details}>
