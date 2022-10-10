@@ -4,6 +4,7 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 import NewsCards from './components/NewsCards/NewsCards';
 import './App.css'
 import Home from "./components/home/Home"
+import Main from "./components/home/Main"
 import wordsToNumbers from 'words-to-numbers';
 import useStyles from './style.js';
 import Aos from "aos";
@@ -55,7 +56,7 @@ const[activeAricle,setActiveArticle] = useState(-1);
   return (
     <BrowserRouter>
     <Routes>
-      <Route exact path="/" element={<Home/>} />
+      <Route exact path="/" element={<Main/>} />
       <Route path="/news" element={<NewsCards articles={newsArticles} activeArticle={activeAricle} data-aso="fade[up" />} />
     </Routes>
   </BrowserRouter>
