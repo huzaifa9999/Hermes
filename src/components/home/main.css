@@ -17,11 +17,20 @@
     filter: brightness(.8);
     }
 
+    .heading{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* margin: 3rem; */
+        margin-bottom: 30rem;
+    }
+
 
 .image{ 
-    height: 35rem;
-    margin-top : -5em;
-    margin-left:65rem;
+    height: 15rem;
+    /* margin-top : -5em;
+    margin-left:65rem; */
     filter : brightness(.8);
 }
 

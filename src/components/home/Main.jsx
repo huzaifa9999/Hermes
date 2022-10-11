@@ -21,21 +21,29 @@ export default function Main() {
           <source src={bgvideo} type='video/mp4' />
         </video>
 
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
-        <div className="heading"><h1>
-          {" "}
-          HERMES </h1></div>
-        <div className="heading1">
-        <Fade right big cascade>
-            <div className="img-container">
+       
+        <div className="heading">
+        <div className="img-container">
               <img
                 src={lo}
                 alt="a"
                 className="image"
               />
-            </div></Fade>
+            </div><h1>
+          {" "}
+          HERMES </h1>
+          
+          <div className="img-container">
+              <img
+                src={lo}
+                alt="a"
+                className="image"
+              />
+            </div>
+          
+          </div>
+        <div className="heading1">
+        
           <Fade left big cascade>
 
             <div className="text">
