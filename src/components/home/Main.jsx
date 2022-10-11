@@ -5,7 +5,9 @@ import "./main.css";
 import bgvideo from "../.././assests/b4.mp4"
 import Aos from "aos";
 import "aos/dist/aos.css";
-import lo from "../../assests/hermes2-transformed-transformed.png"
+import lo from "../../assests/hermes.svg"
+import logo from '../../assests/hermeslogo.png'
+
 export default function Main() {
   useEffect(() => {
     Aos.init({ duration: 2500 });
@@ -14,23 +16,81 @@ export default function Main() {
     <>
       <div className="container">
 
-      <video autoPlay loop  muted id='video'>
+        <video autoPlay loop muted id='video'>
 
-<source src={bgvideo} type='video/mp4' />
-    </video>
-        
-          {/* <div className="logo">
-            <img src= {lo} alt="" />
-          </div> */}
+          <source src={bgvideo} type='video/mp4' />
+        </video>
+
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="heading"><h1>
+          {" "}
+          HERMES </h1></div>
         <div className="heading1">
-        <Fade left big cascade>
+        <Fade right big cascade>
+            <div className="img-container">
+              <img
+                src={lo}
+                alt="a"
+                className="image"
+              />
+            </div></Fade>
+          <Fade left big cascade>
+
             <div className="text">
-              <h1>
-                {" "}
-                Welcome to Hermes </h1>
-               <span><h2>A News App as agile and fast as the Greek
-                Messenger God.</h2></span> 
-              
+              <ul class="small-block-grid-2 medium-block-grid-3 flip-cards">
+
+                <li ontouchstart="this.classList.toggle('hover');">
+                  <div class="large button card-front">
+                    <a>Learn More about the App</a>
+                    <i class="fa fa-code card-icon "></i>
+                  </div>
+                  <div class="panel card-back">
+                    <i class="fa fa-code card-icon"></i>
+                    <div class="hub-info">
+                      <a >JKLCode.com</a>
+                      <p>Find coding gists, cheatsheets, plugins, themes, resources, and tutorials.</p>
+                    </div>
+                    <small class="clear">Updated TTH.</small>
+                  </div>
+                </li>
+
+                <li ontouchstart="this.classList.toggle('hover');">
+                  <div class="large button card-front">
+                    <a>Instructions</a>
+                    <i class="fa fa-pencil-square-o card-icon"></i>
+                  </div>
+
+                  <div class="panel card-back">
+                    <i class="fa fa-pencil-square-o card-icon"></i>
+                    <div class="hub-info">
+                      <a>AaronSnowberger.com</a>
+                      <p>Take a look at my graphic design portfolio and contact me for design work.</p>
+                    </div>
+                    <small class="clear">Updated Saturdays.</small>
+                  </div>
+                </li>
+
+                <li ontouchstart="this.classList.toggle('hover');">
+                  <div class="large button card-front">
+                    <a>Get Started</a>
+                    <i class="fa fa-paper-plane-o card-icon"></i>
+                  </div>
+
+                  <div class="panel card-back">
+                    <i class="fa fa-paper-plane-o card-icon"></i>
+                    <div class="hub-info">
+                      <a>Udemy.com</a>
+                      <p>Join classes about Computers, Technology, Coding, Design, and Language Learning.</p>
+                    </div>
+                    <small class="clear">Updated Mondays.</small>
+                  </div>
+                </li>
+              </ul>
+              {/* <span><h2>Welcome to Hermes, a News App as agile and fast as the Greek
+                Messenger of Gods.</h2></span>
+
               <h3>
                 {" "}
                 With progress in Artificial Intelligence, the ways of reading
@@ -42,22 +102,13 @@ export default function Main() {
                 "How are you?" .
               </h3> */}
             </div></Fade>
-            <Fade right big cascade>
-            <div className="img-container">
-              <img
-                src={lo}
-                alt="a"
-                className="image"
-              />
-            </div></Fade>
-          </div> 
-          {/* <div className="button">
+        </div>
+        {/* <div className="button">
             <button className="btn">
               {" "}
               <Link to={"/news"}>Get Started</Link>
             </button>
           </div> */}
-        
       </div>
     </>
   );
