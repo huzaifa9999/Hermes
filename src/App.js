@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import alanBtn from '@alan-ai/alan-sdk-web';
 import NewsCards from './components/NewsCards/NewsCards';
 import './App.css'
-import Home from "./components/home/Home"
 import Main from "./components/home/Main"
 import wordsToNumbers from 'words-to-numbers';
 import useStyles from './style.js';

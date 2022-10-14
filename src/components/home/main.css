@@ -23,7 +23,6 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    filter: brightness(.9);
     }
 
 .heading{
@@ -39,5 +38,21 @@
 .heading h1{
   font-size: 4rem;
   text-align: center;
+  color:#39bdc8;
 }
 
+.instructions li{
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  padding: .8rem;
+  color:#39bdc8
+   }
+   ul{
+      list-style: none;
+   }
+   .instructions h2{
+      text-align: center;
+      font-size: 2.25rem;
+      color:#39bdc8
+   }

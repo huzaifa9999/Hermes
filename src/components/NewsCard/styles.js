@@ -15,11 +15,10 @@ export default makeStyles({
         flexDirection: 'column',
         justifyContent: 'space-between',
         borderBottom: '10px solid white',
-        backgroundColor: '#071B2F',
-        // -webkit-backdrop-filter: blur(10px),
-	    backdropFilter: "blur(30px)",
-        boxShadow: '10px 10px 10px rgba(30,30,30,0.5)',
-        color:'#B6E4C8'
+        background: 'rgba(255, 255, 255, 0.61)',
+        borderRadius: '16px',
+        boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+        backdropFilter: 'blur(4px)',
     },
     activeCard: {
         borderBottom: '10px solid #22289a',

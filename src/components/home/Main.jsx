@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./main.css";
-import bgvideo from "../.././assests/b4.mp4";
+import bgvideo from "../../assests/bg.mp4";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import left from "../../assests/hermes-left.svg";
-import right from "../../assests/hermes-right.svg";
+import right from "../../assests/herm.svg";
 import MainCard from "./MainCard";
 
 export default function Main() {

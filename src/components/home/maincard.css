@@ -8,13 +8,21 @@
   transform: translate(-50%, -50%);
   height: 250px;
   width: 300px;
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
   overflow: hidden;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   cursor: pointer;
   /* box-shadow: 0 0 20px 8px #d0d0d0; */
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
 }
-
+.container:hover{
+  background: rgba(255, 255, 255, 0.61);
+}
 .content {
   position: absolute;
   top: 50%;
@@ -34,7 +42,7 @@ h3 {
   font-weight: 300;
 }
 
-.flap {
+/* .flap {
   width: 100%;
   height: 100%;
 }
@@ -43,14 +51,14 @@ h3 {
   position: absolute;
   content: "";
   height: 100%;
-  width: 100%;
+  width: 100%; */
 /* From https://css.glass */
-background: rgba(93, 63, 211, 0.59);
+/* background: rgba(255, 255, 255, 0.26);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(19.2px);
--webkit-backdrop-filter: blur(19.2px);
-border: 1px solid rgba(93, 63, 211, 0.3);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(255, 255, 255, 0.91);
 
   
   background-position: 100px;
@@ -63,14 +71,14 @@ border: 1px solid rgba(93, 63, 211, 0.3);
   content: "";
   height: 100%;
   width: 100%;
-  right: 0;
+  right: 0; */
 /* From https://css.glass */
-background: rgba(93, 63, 211, 0.59);
+/* background: rgba(255, 255, 255, 0.26);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(19.2px);
--webkit-backdrop-filter: blur(19.2px);
-border: 1px solid rgba(93, 63, 211, 0.3);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(255, 255, 255, 0.91);
 
   background-position: -200px;
   background-repeat: no-repeat;
@@ -83,4 +91,4 @@ border: 1px solid rgba(93, 63, 211, 0.3);
 
 .container:hover .flap::before{
   transform: translatex(-300px);
-}
+} */

@@ -30,7 +30,7 @@ if(i===activeArticle && eleref[activeArticle]){
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.cardActions}>
-                <Button size='small' color='primary' href={url} target='_blank'>Learn More</Button>
+                <Button size='small' color='#B6E4C8' href={url} target='_blank'>Learn More</Button>
                 <Typography variant="h5" >{i + 1}</Typography>
             </CardActions>
         </Card>

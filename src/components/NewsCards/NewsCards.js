@@ -2,8 +2,11 @@ import React from 'react'
 import NewsCard from '../NewsCard/NewsCard'
 import { Grid, Grow, Typography } from '@material-ui/core'
 import useStyles from './Styles'
-import { BrowserRouter as Router, Route, Link } 
-       from "react-router-dom";
+import { BrowserRouter as Router, Route, Link }
+    from "react-router-dom";
+import left from "../../assests/hermes-left.svg";
+import right from "../../assests/herm.svg";
+import bgvideo from "../../assests/bg.mp4";
 
 
 export default function NewsCards({ articles, activeArticle }) {
@@ -20,8 +23,17 @@ export default function NewsCards({ articles, activeArticle }) {
     if (!articles.length) {
         return (
             <>
+                <video autoPlay loop muted id="video">
+                    <source src={bgvideo} type="video/mp4" />
+                </video>
                 <div className="instructions" >
-                <Link to={'/'} style={{textDecoration:'none'}}><h1>HERMES</h1></Link>
+                    <div className='heading'><Link to={'/'} style={{ textDecoration: 'none' }}>
+                        <img src={right} alt="" className="headimage" style={{ float: 'left', height: '10rem' }} />
+                        <h1 style={{ float: 'left' }}>
+                            HERMES
+                        </h1>
+                        <img src={left} alt="" className="headimage" style={{ float: 'right', height: '10rem' }} />
+                    </Link></div>
                     <h2>Say the following</h2>
                     <ul className="list" data-aos="fade-up" data-aos-easing="ease-in-out">
                         <li>Try saying "Go Back" To go back to the previous page</li>
@@ -35,7 +47,7 @@ export default function NewsCards({ articles, activeArticle }) {
                     <Grid className={classes.container} container alignItems="stretch" spacing={3}>
                         {infoCards.map((infoCard) => (
                             <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCard}>
-                                <div className={classes.card} style={{ backgroundColor: infoCard.color }}>
+                                <div className={classes.card}>
                                     <Typography variant="h5" component="h5">{infoCard.title}</Typography>
                                     {infoCard.info ? <Typography variant="h6" component="h6"><strong>{infoCard.title.split(' ')[2]}</strong>: <br />{infoCard.info}</Typography> : null}
                                     <Typography variant="h6" component="h6">Try saying: <br /> <i>{infoCard.text}</i></Typography>
@@ -49,8 +61,18 @@ export default function NewsCards({ articles, activeArticle }) {
     }
 
     return (
-        <><div className="instructions" >
-             <Link to={'/'} style={{textDecoration:'none'}}><h1>HERMES</h1></Link>
+        <>
+        <video autoPlay loop muted id="video">
+                    <source src={bgvideo} type="video/mp4" />
+                </video>
+        <div className="instructions" >
+            <div className='heading'><Link to={'/'} style={{ textDecoration: 'none' }}>
+                <img src={right} alt="" className="headimage" style={{ float: 'left', height: '10rem' }} />
+                <h1 style={{ float: 'left' }}>
+                    HERMES
+                </h1>
+                <img src={left} alt="" className="headimage" style={{ float: 'right', height: '10rem' }} />
+            </Link></div>
             <h2>Say the following</h2>
             <ul className="list" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <li>"Go Back" To go back to the previous page</li>
