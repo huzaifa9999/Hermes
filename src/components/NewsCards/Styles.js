@@ -16,10 +16,11 @@ export default makeStyles({
         backdropFilter: 'blur(4px)',
     },
     infoCard: {
-        display: 'flex', flexDirection: 'column', textAlign: 'center',
+        display: 'flex', flexDirection: 'column', textAlign: 'center'
+        ,
     },
     container: {
-        padding: '0 5%', width: '100%', margin: 0,
+        padding: '0 ', width: '100%', margin: 0,display: 'flex',justifyContent: 'center'
         
     }
 });

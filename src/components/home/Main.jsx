@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Fade from "react-reveal/Fade";
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./main.css";
 import bgvideo from "../../assests/bg.mp4";
 import Aos from "aos";
@@ -34,9 +34,9 @@ export default function Main() {
        
         <div className="heading1">
        
-       <MainCard />
-        <MainCard />
-        <MainCard />
+       <MainCard heading="About" link="/about" />
+        <MainCard heading="Instructions" link="/instructions" />
+        <MainCard heading="News" link="/news"/>
 
         </div>
       </div>
