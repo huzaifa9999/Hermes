@@ -8,6 +8,7 @@ import "./ins.css"
 export default function Instructions() {
   return (
   <>
+  <div class="flex flex-col items-center justify-center">
      <div className="bg">
         <video autoPlay loop muted id="video1">
           <source src={bgvideo} type="video/mp4" />
@@ -29,6 +30,12 @@ export default function Instructions() {
           </Fade>
         
         </div>
+
+<div class="flex flex-col justify-center items-center h-[25rem] w-[59rem] bg-[#ffff]/[0.3] rounded-2xl">
+<p>loren ipsun</p>
+</div>
+</div>
+
   </>
   )
 }

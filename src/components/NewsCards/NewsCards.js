@@ -23,6 +23,7 @@ export default function NewsCards({ articles, activeArticle }) {
     if (!articles.length) {
         return (
             <>
+            
                 <video autoPlay loop muted id="video">
                     <source src={bgvideo} type="video/mp4" />
                 </video>
@@ -62,6 +63,7 @@ export default function NewsCards({ articles, activeArticle }) {
 
     return (
         <>
+       
         <video autoPlay loop muted id="video">
                     <source src={bgvideo} type="video/mp4" />
                 </video>
@@ -82,6 +84,7 @@ export default function NewsCards({ articles, activeArticle }) {
                 </li>
             </ul>
         </div>
+        <div class="flex flex-col items-center justify-center">
             <Grow in>
                 <Grid className={classes.container} container alignItems='stretch' spacing={3}>
                     {articles.map((article, i) => (
@@ -91,6 +94,7 @@ export default function NewsCards({ articles, activeArticle }) {
                     ))}
                 </Grid>
             </Grow>
+            </div>
         </>
     )
 }
