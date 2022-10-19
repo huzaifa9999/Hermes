@@ -10,8 +10,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Instructions from './components/pages/Instructions';
 import About from './components/pages/About';
-
-
 const akey = 'a470f8316ec72a42a8ccb407e67697c72e956eca572e1d8b807a3e2338fdd0dc/stage';
 function App() {
   useEffect(() => {

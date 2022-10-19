@@ -65,8 +65,8 @@
 
   }
   .headimage{
-    height: 10rem;
-    width: 7rem;
+    height: 8rem;
+    width: 6rem;
   }
   .heading{
     flex-direction:row;
@@ -74,6 +74,6 @@
     align-items: center;
   }
   .heading h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   }

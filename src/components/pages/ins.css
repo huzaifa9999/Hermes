@@ -26,3 +26,9 @@
         text-align: center;
         color:#39bdc8;
       }
+      @media (max-width: 999px) {
+        .headingi h1{
+          font-size: 2.8rem;
+
+        }
+      }
